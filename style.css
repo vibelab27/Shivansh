@@ -1,0 +1,145 @@
+body {
+    margin: 0;
+    padding: 20px;
+    background-color: black;
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+}
+
+#start-screen {
+    color: yellow;
+    text-align: center;
+    padding: 50px;
+}
+
+#start-screen h1 {
+    font-size: 48px;
+    margin-bottom: 30px;
+}
+
+#start-button {
+    background-color: yellow;
+    color: black;
+    border: none;
+    padding: 15px 30px;
+    font-size: 24px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: transform 0.1s;
+}
+
+#start-button:hover {
+    transform: scale(1.1);
+}
+
+#game-over-screen {
+    display: none;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(0, 0, 0, 0.9);
+    padding: 20px;
+    border: 2px solid blue;
+    text-align: center;
+    color: white;
+    border-radius: 10px;
+}
+
+#game-over-screen h2 {
+    color: yellow;
+    margin-bottom: 20px;
+}
+
+#game-over-screen p {
+    margin: 10px 0;
+    font-size: 18px;
+}
+
+.retry-button {
+    background-color: yellow;
+    color: black;
+    border: none;
+    padding: 10px 20px;
+    font-size: 18px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+.retry-button:hover {
+    transform: scale(1.1);
+}
+
+.game-container {
+    text-align: center;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    color: white;
+    margin-bottom: 20px;
+    font-size: 24px;
+}
+
+#game-board {
+    background-color: black;
+    border: 2px solid blue;
+    width: 420px;
+    height: 465px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.cell {
+    width: 15px;
+    height: 15px;
+    border: none;
+    position: relative;
+    box-sizing: border-box;
+}
+
+.wall {
+    background-color: blue;
+}
+
+.dot {
+    position: absolute;
+    background-color: #FFB897;
+    border-radius: 50%;
+    width: 4px;
+    height: 4px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.pacman {
+    position: absolute;
+    background-color: yellow;
+    border-radius: 50%;
+    width: 13px;
+    height: 13px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.ghost {
+    position: absolute;
+    background-color: red;
+    border-radius: 6px 6px 2px 2px;
+    width: 13px;
+    height: 13px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.lives {
+    color: white;
+    margin-top: 20px;
+    font-size: 20px;
+}
